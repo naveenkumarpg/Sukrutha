@@ -1,0 +1,21 @@
+.number-list {
+  color: darkgray;
+}
+
+.number-list > span {
+  font-size: 25px;
+  margin-top: 15px;
+  float: left;
+  width: 300px;
+}
+
+.number-list > span span {
+  width: 100px;
+  float: left;
+}
+
+@media print {
+  .non-print {
+    display: none;
+  }
+}

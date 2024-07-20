@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz Generator</title>
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="non-print">
+      <h1>Math Quiz Generator</h1>
+      <p>Choose an operation:</p>
+
+      <label>
+        <input type="radio" name="operation" value="addition" checked />
+        Addition
+      </label>
+
+      <label>
+        <input type="radio" name="operation" value="subtraction" /> Subtraction
+      </label>
+
+      <label>
+        <input type="radio" name="operation" value="multiplication" />
+        Multiplication
+      </label>
+
+      <label>
+        <input type="radio" name="operation" value="division" /> Division
+      </label>
+
+      <br />
+      <br />
+      <label for="maxNumber">Max Number: </label>
+      <input type="number" id="maxNumber" min="1" value="50" />
+      <br />
+      <br />
+      <button onclick="generateQuiz()">Generate Quiz</button>
+
+      <button onclick="printQuiz()">Print Quiz</button>
+      <br />
+    </div>
+
+    <div id="print-container">
+      <div class="number-list" id="quizContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
